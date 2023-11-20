@@ -1,0 +1,14 @@
+{
+  "test_user" : {
+    "chris": {
+      "username": "chris hughes",
+      "email": "chris.hughes@testmail.com",
+      "password": "M@nlit&9)_12K",
+      "okta_id": "1234567890123456789012345678901"
+    },
+    "nop_store_admin": {
+      "username": "admin@yourstore.com",
+      "password": "admin"
+    }
+  }
+}

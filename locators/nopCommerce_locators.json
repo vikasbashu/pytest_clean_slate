@@ -1,0 +1,19 @@
+{
+      "Login" : {
+         "textbox_username_id" : "Email",
+        "textbox_password_id": "Password",
+        "button_login_xpath": "(//button[@type='submit'])[1]",
+        "link_logout_linkText": "Logout",
+        "heading_dashboard_xpath": "(//h1[contains(text(),'Dashboard')])[1]",
+        "title_loginPage_xpath": "(//*[contains(text(),'Welcome, please sign in')])[1]",
+        "text_errorMessage_xpath": "(//div[contains(@class, 'message-error')])[1]"
+      },
+      "AddCustomer" : {
+        "text_sideNavBar_customers_xpath": "(//p[contains(text(), 'Customers')])[1]",
+        "text_subCategory_xpath": "(//p[contains(text(), '{}')])[{}]",
+        "button_AddNew_xpath": "//a[@class='btn btn-primary']",
+        "pageTitle": "(//h1[contains(text(), '{}')])[1]",
+        "alert": "(//div[contains(@class,'alert')])[1]"
+      }
+
+}
