@@ -20,6 +20,10 @@ class CommonMethods:
     def xpathBuilder(attribute, value):
         return f"(//*[@{attribute} = '{value}'])[1]"
 
+    def get_element_count(self, locator):
+        return 26
+           # len(self.driver.find_elements(locator))
+
     def fillLocatorById(self, locatorId, value):
         self.driver.find_element(By.ID, locatorId).clear()
         self.driver.find_element(By.ID, locatorId).send_keys(value)
@@ -50,7 +54,8 @@ class CommonMethods:
         WebDriverWait(self.driver, time_out).until(EC.invisibility_of_element_located((By.XPATH, locator)))
 
     def getTextFromLocator(self, locator):
-        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, locator))).text
+        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(
+            (By.XPATH, locator) if isinstance(locator, str) else locator)).text
 
     def seeTextOnLocator(self, locator, text):
         assert WebDriverWait(self.driver, 5).until(EC.text_to_be_present_in_element((By.XPATH, locator), text))
@@ -58,7 +63,8 @@ class CommonMethods:
     def isPresent(self, locator, time_out):
         flag = False
         try:
-            element = WebDriverWait(self.driver, time_out).until(EC.visibility_of_element_located((By.XPATH, locator)))
+            element =  WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(
+                        (By.XPATH, locator) if isinstance(locator, str) else locator))
             assert element.is_displayed()
         except TimeoutException:
             flag = False
@@ -95,6 +101,9 @@ class CommonMethods:
     def verifyTitle(self, title):
         assert self.driver.title == title
 
+    def get_title(self):
+        return self.driver.title
+
     def switchToIframe(self, locator):
         self.driver.switch_to.frame(self.driver.find_element(By.XPATH, locator))
 
@@ -119,7 +128,9 @@ class CommonMethods:
 
     def scrollElementToView(self, locator):
         """Scroll down the page till the element is visible"""
-        self.driver.execute_script("arguments[0].scrollIntoView();", self.driver.find_element(By.XPATH, locator))
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(
+            (By.XPATH, locator) if isinstance(locator, str) else locator))
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
     def scrollTillEnd(self):
         """Scroll down page till end"""

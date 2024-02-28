@@ -6,7 +6,7 @@ from selenium.webdriver.support.events import AbstractEventListener
 class WebDriverListener(AbstractEventListener):
 
     log_fileName = datetime.datetime.now().strftime("%Y-%m-%d")
-    logging.basicConfig(level=logging.INFO,
+    logging.basicConfig(level=logging.ERROR,
                         filename=f"output/logs/{log_fileName}.log",
                         format="%(asctime)s: %(levelname)s: %(message)s"
                         )

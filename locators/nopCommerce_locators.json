@@ -14,6 +14,14 @@
         "button_AddNew_xpath": "//a[@class='btn btn-primary']",
         "pageTitle": "(//h1[contains(text(), '{}')])[1]",
         "alert": "(//div[contains(@class,'alert')])[1]"
+      },
+      "searchCustomer": {
+        "input_email_id" : "SearchEmail",
+        "input_firstName_id" : "SearchFirstName",
+        "input_lastName_id" : "SearchLastName",
+        "button_search_id" : "search-customers",
+        "search_pane": "(//*[@class='search-text' and text()='Search'])[1]",
+        "search_result_xpath" : "(//*[@id='customers-grid']/tbody/tr[{}]/td)[{}]"
       }
 
 }

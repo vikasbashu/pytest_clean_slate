@@ -1,6 +1,6 @@
 {
   "test_user" : {
-    "chris": {
+    "user_details": {
       "username": "chris hughes",
       "email": "chris.hughes@testmail.com",
       "password": "M@nlit&9)_12K",

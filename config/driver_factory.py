@@ -22,7 +22,7 @@ def setBrowserOptions(browser, mode):
     if mode is None or mode.__contains__('less'):
         options.add_argument('--headless')
     options.add_argument('--disable-gpu')
-    options.add_argument('--window-size=1325x744')
+    #options.add_argument('--window-size=1325x744')
     options.add_argument('download.default_directory=v1/output/downloads/')
     return options
 

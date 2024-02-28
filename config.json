@@ -1,6 +1,20 @@
 {
   "browser": "chrome",
   "headless_mode": "false",
-  "base_url": "https://admin-demo.nopcommerce.com/",
-  "timeout": 10
+  "timeout": 10,
+  "env": {
+    "qa": {
+      "base_url": "https://admin-demo.nopcommerce.com/",
+      "scanner": "https://www.screener.in/screens/3/highest-dividend-yield-shares/"
+    },
+    "dev": {
+      "base_url": "https://admin-demo.nopcommerce.com/"
+    },
+    "stg": {
+      "base_url": "https://admin-demo.nopcommerce.com/"
+    },
+    "prod": {
+      "base_url": "https://admin-demo.nopcommerce.com/"
+    }
+  }
 }

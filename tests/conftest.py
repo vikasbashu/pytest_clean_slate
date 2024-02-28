@@ -15,6 +15,7 @@ def pytest_addoption(parser):
     """This will get the value from CLI/hooks"""
     parser.addoption("--browser")
     parser.addoption("--mode")
+    parser.addoption("--env", default="qa")
 
 
 @pytest.fixture(scope='class')
@@ -34,13 +35,25 @@ def config():
     """This will load the setup from config file"""
     return json.load(open(f"config.json"))
 
+@pytest.fixture(scope='class')
+def environment(request, config):
+    """This will return the environment value pass with --env flag"""
+    env = None
+    try:
+        env = config['env'][request.config.getoption("--env").casefold()]
+    except KeyError:
+        env = config['env']['qa']
+    finally:
+        return env
+
 
 @pytest.fixture(scope='class')
-def setup(request, config, browser, mode):
+def setup(request, config, browser, mode, environment):
     """This will initiate the driver object with provided configuration"""
     driver = DriverFactory.fetch_driver(config, browser, mode)
     driver.implicitly_wait(config["timeout"])
     driver.maximize_window()
+    driver.get(environment['scanner'] if str(request.cls).__contains__("scanner") else environment["base_url"])
     request.cls.driver = driver
     request.cls.commonMethods = CommonMethods(driver)
     before_failed = request.session.testsfailed
