@@ -14,7 +14,7 @@
       "base_url": "https://admin-demo.nopcommerce.com/"
     },
     "prod": {
-      "base_url": "https://admin-demo.nopcommerce.com/"
+      "base_url": "https://admin.nopcommerce.com/"
     }
   }
 }
