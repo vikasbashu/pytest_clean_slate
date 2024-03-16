@@ -1,5 +1,5 @@
 {
-  "browser": "chrome",
+  "browser": "firefox",
   "headless_mode": "false",
   "timeout": 10,
   "env": {
