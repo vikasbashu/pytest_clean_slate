@@ -1,0 +1,104 @@
+2024-03-22 18:59:51,699: INFO: ====== WebDriver manager ======
+2024-03-22 18:59:57,355: INFO: Get LATEST edgedriver version for Edge 122.0.2365
+2024-03-22 18:59:57,435: INFO: Get LATEST edgedriver version for Edge 122.0.2365
+2024-03-22 18:59:57,481: INFO: There is no [mac64] edgedriver "122.0.2365.92" for browser edge "122.0.2365" in cache
+2024-03-22 18:59:57,481: INFO: Get LATEST edgedriver version for Edge 122.0.2365
+2024-03-22 18:59:57,523: INFO: About to download new driver from https://msedgedriver.azureedge.net/122.0.2365.92/edgedriver_mac64.zip
+2024-03-22 18:59:59,960: INFO: Driver downloading response is 200
+2024-03-22 19:00:08,496: INFO: Get LATEST edgedriver version for Edge 122.0.2365
+2024-03-22 19:00:08,636: INFO: Driver has been saved in cache [/Users/vikassharma/.wdm/drivers/edgedriver/mac64/122.0.2365.92]
+2024-03-22 19:00:49,107: INFO: Navigating to https://admin-demo.nopcommerce.com/
+2024-03-22 19:00:52,651: INFO: Navigated to https://admin-demo.nopcommerce.com/
+2024-03-22 19:00:52,653: INFO: Searching for element by id Email
+2024-03-22 19:00:53,223: INFO: Element by id Email found
+2024-03-22 19:00:54,531: INFO: Changing None value
+2024-03-22 19:00:54,775: INFO: None value changed
+2024-03-22 19:00:54,775: INFO: Searching for element by id Email
+2024-03-22 19:00:54,799: INFO: Element by id Email found
+2024-03-22 19:00:54,830: INFO: Changing None value
+2024-03-22 19:00:55,662: INFO: None value changed
+2024-03-22 19:00:55,662: INFO: Searching for element by id Password
+2024-03-22 19:00:55,689: INFO: Element by id Password found
+2024-03-22 19:00:55,702: INFO: Changing None value
+2024-03-22 19:00:56,306: INFO: None value changed
+2024-03-22 19:00:56,306: INFO: Searching for element by id Password
+2024-03-22 19:00:56,342: INFO: Element by id Password found
+2024-03-22 19:00:56,351: INFO: Changing None value
+2024-03-22 19:00:56,693: INFO: None value changed
+2024-03-22 19:00:56,693: INFO: Searching for element by xpath (//button[@type='submit'])[1]
+2024-03-22 19:00:56,715: INFO: Element by xpath (//button[@type='submit'])[1] found
+2024-03-22 19:00:56,780: INFO: Clicking on button-1 login-button
+2024-03-22 19:01:09,894: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:10,075: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:10,662: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:10,761: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:11,382: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:11,396: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:11,918: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:11,931: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:12,452: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:12,460: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:13,060: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:13,213: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:13,955: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:13,968: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:14,511: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:14,523: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:15,039: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:15,052: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:15,568: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:15,581: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:16,133: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:16,145: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:16,671: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:16,681: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:17,195: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:17,206: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:17,720: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:17,730: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:18,255: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:18,265: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:19,126: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:19,144: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:19,658: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:19,670: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:20,265: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:20,269: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:20,778: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:20,786: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:21,334: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:21,346: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:21,861: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:21,874: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:22,391: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:22,401: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:22,923: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:22,935: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:23,450: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:23,460: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:23,974: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:23,987: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:24,508: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:24,520: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:25,034: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:25,047: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:25,576: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:25,587: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:26,114: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:26,125: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:26,670: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:26,676: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:27,189: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:27,199: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:27,714: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:27,725: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:28,254: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:28,264: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:28,790: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:28,802: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:29,321: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:29,330: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:29,844: INFO: Searching for element by xpath (//p[contains(text(), 'Customers')])[1]
+2024-03-22 19:01:29,854: INFO: Element by xpath (//p[contains(text(), 'Customers')])[1] found
+2024-03-22 19:01:30,386: INFO: Quitting Driver
+2024-03-22 19:01:30,458: INFO: Driver quitted

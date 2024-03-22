@@ -1,5 +1,7 @@
 venv
-output
+output/allure
+output/files
+output/html_report
 .idea
 *.pyc
 */__pycache__*
