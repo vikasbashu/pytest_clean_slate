@@ -32,6 +32,22 @@ Command to run test
 Command to generate allure report
 > allure serve output/allure/
 
+Command to run allure server in background
+> nohup allure serve output/allure/ -p 8081 &
+
+Command to stop the background running server
+> ps aux | grep 'allure serve'
+
+Pick the process id available next to username
+Example:
+> root       232  0.0  0.0   2880  1408 pts/0    S+   07:27   0:00 grep --color=auto allure serve
+
+Here 232 is the process id
+
+Close it by command:
+> kill 232
+
+
 # pytest flags
 # -r ->  shows extra test summary
 # -v -> verbose. use to get more information
