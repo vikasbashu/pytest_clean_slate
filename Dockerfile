@@ -14,7 +14,7 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 
 # Download the allure package
-RUN wget https://github.com/allure-framework/allure2/releases/download/2.27.0/allure_2.27.0-1_all.deb
+RUN wget https://github.com/allure-framework/allure2/releases/download/2.32.0/allure_2.32.0-1_all.deb
 
 # Install allure package
 RUN dpkg -i allure_2.27.0-1_all.deb
