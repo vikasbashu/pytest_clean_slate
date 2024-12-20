@@ -4,13 +4,13 @@ import random
 import pytest
 import allure
 
+@pytest.mark.api
+@pytest.mark.xdist_group(name="Suit3")
 class Test_Go_Rest_API_Test_004:
     goRestUser = UserProfile()
 
     @allure.severity(allure.severity_level.CRITICAL)
-    @pytest.mark.xdist_group(name="Suit3")
     @pytest.hookimpl(tryfirst=True)
-    @pytest.mark.api
     def test_create_user_request(self):
         payload = {
             "name": GenericFunctions.get_test_username(),
@@ -22,8 +22,6 @@ class Test_Go_Rest_API_Test_004:
         assert 201 == response.status_code
         self.goRestUser.resp = response.json()
 
-    @pytest.mark.xdist_group(name="Suit3")
-    @pytest.mark.api
     def test_get_user_request(self):
         response = self.goRestUser.getUser(self.goRestUser.resp["id"])
         assert 200 == response.status_code
@@ -34,8 +32,6 @@ class Test_Go_Rest_API_Test_004:
         assert self.goRestUser.resp["status"] == response["status"]
         self.goRestUser.resp = response
 
-    @pytest.mark.xdist_group(name="Suit3")
-    @pytest.mark.api
     def test_update_user_patch_request(self):
         payload = {
             "name": GenericFunctions.get_test_username(),
@@ -49,8 +45,6 @@ class Test_Go_Rest_API_Test_004:
         self.goRestUser.resp = response
         self.test_get_user_request()
 
-    @pytest.mark.xdist_group(name="Suit3")
-    @pytest.mark.api
     def test_update_user_put_request(self):
         payload = {
             "name": GenericFunctions.get_test_username(),
@@ -66,10 +60,7 @@ class Test_Go_Rest_API_Test_004:
         self.goRestUser.resp = response
         self.test_get_user_request()
 
-
-    @pytest.mark.xdist_group(name="Suit3")
     @pytest.hookimpl(trylast=True)
-    @pytest.mark.api
     def test_update_user_delete_request(self):
         response = self.goRestUser.deleteUser(self.goRestUser.resp["id"])
         assert response.status_code == 204
