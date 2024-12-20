@@ -34,7 +34,7 @@ RUN python3 -m venv venv && \
 # Run tests and generate test report
 CMD ["sh", "-c", "\
     . venv/bin/activate && \
-    pytest -v -m api or smoke tests/ && \
+    pytest -v -m api tests/ && \
     allure serve output/allure --port 8081 \
 "]
 
